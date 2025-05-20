@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="home-content">
+            <img src="c:\Users\admin\Documents\final portfolio\picture.1.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Charles Eiric N. Melegrito</h1>
+            <p>BSIT-3B</p>
+            <div class="buttons">
+                <button onclick="showSection('skills')">My Skills</button>
+                <button onclick="showSection('experience')">Experience</button>
+                <button onclick="showSection('certifications')">Certifications</button>
+                <button onclick="showSection('personal-info')">Personal Information</button>
+                <button onclick="showSection('objective')">Professional Objective</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="skills" class="section hidden">
+        <h2>My Skills</h2>
+        <ul>
+            <li>💻 HTML, CSS, JavaScript</li>
+        </ul>
+    </section>
+
+    <section id="experience" class="section hidden">
+        <h2>My Experience</h2>
+        <p>Attended on Y4it</p>
+        <p>Created a personal website</p>
+        <p>Created a Capstone project (Ecommerce WasteWise)</p>
+    </section>
+
+    <section id="certifications" class="section hidden">
+        <h2>Certifications</h2>
+        <div class="cert-img">
+          <img src="c:\Users\admin\Downloads\cert.jpg" alt="Certificate Image">
+      </div>
+    </section>
+
+    <section id="personal-info" class="section hidden">
+      <h2>Personal Information</h2>
+      <p><strong>Name:</strong> Charrles Eiric n. Melegrito</p>
+      <p><strong>Address:</strong> Cawayan Bugtong, Guimba , Nueva Ecija</p>
+      <p><strong>Contact:</strong> charlesmelegrito@gmail.com</p>
+      <p><strong>Facebook:</strong> 
+          <a href="https://www.facebook.com/melegrito.charles09" target="_blank">Visit my Facebook</a>
+      </p>
+  </section>
+  
+
+    <section id="objective" class="section hidden">
+        <h2>Professional Objective</h2>
+        <p>To build user-friendly, responsive websites and grow as a full-stack developer.</p>
+    </section>
+
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
